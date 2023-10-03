@@ -5,13 +5,12 @@
     box-sizing: border-box;
 }
 body{
-    background:black;
+    background:pink;
     color:white ;
 }
 #header{
     width: 100%;
     height: 100vh;
-    background-image: url(images/background.jpeg);
     background-size:cover ;
     background-position: center;
 }
@@ -61,16 +60,195 @@ nav ul li a:hover::after{
 
 .header-text{
     margin-top: 20%;
-    font-size: 30px;
+    font-size: 20px;
 }
-.header-text h1{
-    font-size: 40px;
+.header-image {
+    max-width: 100px; 
+    margin-right: 20px; 
+    }
+
+.header-container {
+    display: flex;
+    align-items: center;
+    }    
+.header-text h2{
+    font-size: 30px;
     margin-top: 20px;
 }
-.header-text h1 span{
+.header-text h1{
+    font-size: 20px;
+    margin-top: 10px;
+}
+.header-text h2 span{
     color: red;
 }
-
+#blog{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 40px;
+    border-bottom: 1px solid rgba(0,0,0,0.5);
+}
+.blog-heading{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.blog-heading span{
+    font-size: 50px;
+}
+.blog-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 0px;
+    flex-wrap: wrap;
+}
+.blog-box{
+    width: 350px;
+    background-color: white;
+    border: 1px solid #ececec;
+    margin: 20px;
+}
+.blog-image{
+    width: 100%;
+    height: auto;
+}
+.blog-image img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+.blog-text{
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+}
+.blog-text span{
+    font-size: 30px;
+    color: red;
+}
+.blog-text span:hover{
+    color: lightcoral;
+}
+.blog-text h4{
+    color: lightcoral;
+    margin-top: 20px;
+}
+.blog-text p{
+    font-size: 15px;
+    color: #111;
+    font-weight: 500;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    margin: 20px 0px;
+}
+.blog-text a{
+    color: #0f0f0f;
+}
+.blog-text a:hover{
+    transition: all ease 0.5s;
+    color: red;
+}
+.travel-blog h2{
+    color: white;
+    text-align: center;
+    height: auto;
+    margin-top: 40px;
+}
+.travel-blog h1{
+     color: white;
+    margin-top: 40px;
+    margin-right: auto;
+    text-align: right;
+    display: flex;
+    align-items: center;
+}
+.travel-blog p{
+    margin-top: 20px;
+    font-size: 20px;
+}
+.travel-image{
+    width: 30%;
+    height: auto;
+    display: inline-block;
+    margin-top: 30px;
+    align-items: center;
+}
+.travel-image img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+.dance-blog h2{
+    color: white;
+    text-align: center;
+    height: auto;
+    margin-top: 40px;
+}
+.dance-blog h1{
+    color: white;
+    margin-top: 40px;
+    margin-right: auto;
+    text-align: right;
+    display: flex;
+    align-items: center;
+}
+.dance-blog p{
+    margin-top: 20px;
+    font-size: 20px;
+}
+.dance-image{
+    width: 100%;
+    height: auto;
+    display: inline-block;
+    max-width: 50%;
+    margin-top: 30px;
+}
+.dance-image img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+.cook-blog h2{
+    color: white;
+    text-align: center;
+    height: auto;
+    margin-top: 40px;
+}
+.cook-blog p{
+    margin-top: 20px;
+    font-size: 20px;
+}
+.cook-blog h1{
+    color: white;
+    margin-top: 40px;
+    margin-right: auto;
+    text-align: right;
+    display: flex;
+    align-items: center;
+}
+.cook-image{
+    width: 100%;
+    height: auto;
+    display: inline-block;
+    max-width: 50%;
+    margin-top: 30px;
+}
+.cook-image img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
 #about{
     padding: 80px 0;
     color:white ;
