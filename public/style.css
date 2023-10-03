@@ -11,6 +11,7 @@ body{
 #header{
     width: 100%;
     height: 100vh;
+    background-image: url(/images/bgd.jpeg);
     background-size:cover ;
     background-position: center;
 }
@@ -274,12 +275,21 @@ nav ul li a:hover::after{
 .title{
     font-size: 50px;
     font-weight: 500;
-    color: white;
+    color: lightseagreen;
+}
+.about-col-2 p{
+    color: lightcoral;
+}
+.about-col-1{
+    width: 80px;
+    height: 30px;
+    margin-bottom: 80px;
 }
 .tab-titles{
     display: flex;
     padding-bottom: 20px;
     margin: 20 px 0 0px;
+    color: lightseagreen;
 }
 .tab-links{
     margin-right: 50px;
@@ -292,7 +302,7 @@ nav ul li a:hover::after{
     content: '';
     width: 0;
     height: 3px;
-    background: red;
+    background: lightcoral;
     position: absolute;
     left: 0;
     bottom: -8px;
@@ -306,9 +316,10 @@ nav ul li a:hover::after{
     list-style: none;
     margin: 10px 0;
     font-size: 15x;
+    color: lightseagreen;
 }
 .tab-contents ul li span{
-    color: red;
+    color: lightcoral;
     font-size: 20px;
 }
 .tab-contents{
