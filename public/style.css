@@ -21,7 +21,6 @@ body{
 .container{
     padding: 10px 10%;
 }
-
 nav{
     display: flex;
     align-items: center;
@@ -192,8 +191,9 @@ nav ul li a:hover::after{
 .travel-blog h1{
     color: white;
     position: relative;
-    font-size: 15px;
+    font-size: 20px;
     text-align: center;
+    top: 20px;
 }
 .travel-blog p{
     margin-top: 20px;
@@ -207,6 +207,18 @@ nav ul li a:hover::after{
     width: 410px;
     height: 440px;
 }
+.travel-blog a{
+    padding: 10px 20px;
+    border: 1px solid #eee;
+    background: pink;
+    color: black;
+    font-size: 25px;
+    cursor: pointer;
+    outline: none;
+}
+.travel-blog a:hover{
+    color: palevioletred;
+}
 .dance-blog h2{
     color: white;
     text-align: center;
@@ -218,10 +230,24 @@ nav ul li a:hover::after{
     position: relative;
     font-size: 20px;
     text-align: center;
+    top: 20px;
 }
 .dance-blog p{
     margin-top: 20px;
-    font-size: 26px;
+    font-size: 22px;
+    margin-left:  20px;
+}
+.dance-blog a{
+    padding: 10px 20px;
+    border: 1px solid #eee;
+    background: pink;
+    color: black;
+    font-size: 25px;
+    cursor: pointer;
+    outline: none;
+}
+.dance-blog a:hover{
+    color: palevioletred;
 }
 .dance-text, .travel-text, .cook-text{
     margin-top: 60px;
@@ -234,6 +260,7 @@ a.nav-link {
     text-decoration: none;
     color: white;
 }
+
 .dance-image{
     text-align: center;
 }
@@ -255,8 +282,9 @@ a.nav-link {
 .cook-blog h1{
     color: white;
     position: relative;
-    font-size: 15px;
+    font-size: 20px;
     text-align: center;
+    top: 20px;
 }
 .cook-image{
     text-align: center;
@@ -265,6 +293,18 @@ a.nav-link {
     margin-top: 30px;
     width: 430px;
     height: 440px;
+}
+.cook-blog a{
+    padding: 10px 20px;
+    border: 1px solid #eee;
+    background: pink;
+    color: black;
+    font-size: 25px;
+    cursor: pointer;
+    outline: none;
+}
+.cook-blog a:hover{
+    color: palevioletred;
 }
 #about{
     padding: 80px 0;
