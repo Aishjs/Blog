@@ -78,7 +78,7 @@ nav ul li a:hover::after{
 
 .header-text{
     padding: 45px 0 0px 45px;
-    font-size: 20px;
+    font-size: 30px;
 }
 .header-image {
     max-width: 100px; 
@@ -246,7 +246,7 @@ nav ul li a:hover::after{
     cursor: pointer;
     outline: none;
 }
-.dance-blog a:hover{
+.dance-hover :hover{
     color: palevioletred;
 }
 .dance-text, .travel-text, .cook-text{
@@ -318,8 +318,8 @@ a.nav-link {
     flex-basis: 35%;
 }
 .about-col-1 img{
-    width: 280px;
-    margin-top: 80px;
+    width: 350px;
+    margin-top: 150px;
     border-radius: 15px;
     top: 50%;
     margin-left: 10%;
@@ -345,7 +345,7 @@ a.nav-link {
     display: flex;
     padding-bottom: 20px;
     margin: 20 px 0 0px;
-    color: lightseagreen;
+    color: palevioletred;
 }
 .tab-links{
     margin-right: 50px;
