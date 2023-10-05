@@ -4,7 +4,7 @@
   const app = document.querySelector(".app");
   const socket = io();
 
-  let userName = "";
+  let userName = username;
 
   app.querySelector("#join-user").addEventListener("click", function () {
     let username = app.querySelector(".join-screen #username").value;
