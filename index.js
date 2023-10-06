@@ -25,7 +25,7 @@ io.on("connection", function (socket) {
     // Add the new user to the activeUsers array
     activeUsers.push(username);
     // Broadcast the updated active users list to all clients
-    io.emit("activeusers", activeUsers);
+    socket.broadcast.emit("activeusers", activeUsers);
 
     // Broadcast a message to inform others that the user has joined
     socket.broadcast.emit("update", username + " joined the conversation");
@@ -38,7 +38,7 @@ io.on("connection", function (socket) {
       activeUsers.splice(index, 1);
     }
     // Broadcast the updated active users list to all clients
-    io.emit("activeusers", activeUsers);
+    socket.broadcast.emit("activeusers", activeUsers);
 
     // Broadcast a message to inform others that the user has left
     socket.broadcast.emit("update", username + " left the conversation");
