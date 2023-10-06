@@ -39,13 +39,14 @@ nav{
     position: absolute;
     right: 95%; 
     top: 0px;
+    background-color: whitesmoke;
     }
 .logo2 img{
     width: 200px;
     position: absolute;
     top: 0px;
-    left: 0px;
-    background-color: rosybrown;
+    right: 95%;
+    background-color:whitesmoke;
 }
 nav ul li{
     display:inline-block;

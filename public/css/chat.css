@@ -181,4 +181,24 @@ body{
     margin-left: 200px;
     padding-left: 20px;
 }
+.chat-home{
+    float: right;
+    position: relative;
+    left: 42%;
+    margin-bottom: 20px;
+}
+li.navbar-item {
+    float: right;
+    list-style: none;
+}
+a.nav-link{
+    text-decoration: none;
+    color: white;
+    padding: 5px;
+    background-color: black;
+    font-size: 25px;
+}
 
+.chat-home a:hover{
+    color: pink;
+}

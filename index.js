@@ -31,11 +31,6 @@ io.on("connection", function (socket) {
   });
 
   socket.on("exituser", function (username) {
-    // Remove the user from the activeUsers array
-    const index = activeUsers.indexOf(username);
-    if (index !== -1) {
-      activeUsers.splice(index, 1);
-    }
     // Broadcast the updated active users list to all clients
     socket.broadcast.emit("activeusers", activeUsers);
 
