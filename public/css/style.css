@@ -34,7 +34,7 @@ nav{
 .header1{
     position: fixed;
 }
-.logo-title{
+.logo-title img{
     width: 200px;
     position: absolute;
     right: 95%; 
@@ -45,6 +45,7 @@ nav{
     width: 200px;
     position: absolute;
     top: 0px;
+    height: 90px;
     right: 95%;
     background-color:whitesmoke;
 }
