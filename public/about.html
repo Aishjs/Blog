@@ -6,19 +6,26 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <title>Aish</title>
         <meta name="description" content="">
+        <!-- Set view port for responsive message -->
         <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!-- Link to external CSS file -->
         <link rel="stylesheet" href="style.css">
+        <!-- Including jquery and bootstrap javascript libraries -->
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"> </script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     </head>
     <body>
+        <!-- Header Section -->
         <div id="header-main">
             <div class="container">
+                <!-- Navigation bar -->
                 <nav class ="header-1">
+                    <!-- Logo -->
                     <div class="logo2">
                     <img src="images/logo.png">
                     </div>
+                    <!-- Navigation links -->
                     <ul>
                         <li class="nav-item"><a class="nav-link"  href="index.html">Home</a></li>
                         <li class="nav-item"><a class="nav-link">About</a></li>
@@ -26,6 +33,7 @@
                     </ul>
                 </nav>
              </div>
+             <!-- About me section -->
              <div id="aboutme">
                 <div class="container">
                     <div class="row">
@@ -33,12 +41,14 @@
                             <h1 class="title">About Me</h1><br>
                             <p><em>Currently studying information technology at University of Aberdeen for my master's degree.Over the past two years, I have gained a great deal of knowledge about different technologies while working as a Software Engineer.Also, I gained valuable knowledge about team collaboration and communication skills by engaging in a beautiful experience with my colleagues.</em></p>
                             <br>
+                            <!-- Tabs for different sections -->
                             <div class="tab-titles">
                                 <p class="tab-links active-link" onclick="opentab('softskills')">Soft Skills</p>
                                 <p class="tab-links" onclick="opentab('techskills')">Technical Skills</p>
                                 <p class="tab-links" onclick="opentab('experience')">Experience</p>
                                 <p class="tab-links" onclick="opentab('education')">Education </p>
                             </div>
+                            <!-- Content for soft skills tab -->
                             <div class="tab-contents active-tab" id="softskills">
                                 <ul>
                                     <li><span>Agile Methodologies</span><br><em>Following the set of approaches and practices for software development and project management.</em></li>
@@ -48,6 +58,7 @@
                                     <li><span>Communication</span><br><em>Convey information, ideas, thoughts, and feelings effectively to others.</em></li>                  
                                 </ul>
                             </div>
+                            <!-- Content for techical skills tab -->
                             <div class="tab-contents" id="techskills">
                                 <ul>
                                     <li><span>Python</span><br><em>High-level, general-purpose programming language.</em></li>
@@ -58,12 +69,14 @@
                                     <li><span>Web Development</span><br><em>Creating websites and web applications.</em></li>                    
                                 </ul>
                             </div>
+                            <!-- Content for soft experience tab -->
                             <div class="tab-contents" id="experience">
                                 <ul>
                                     <li><span>Software Engineer</span><br><em>H&M</em></li>
                                     <li><span>Assistant System Engineer</span><br><em>Tata Consultancy Services</em></li>      
                                 </ul>
                             </div>
+                            <!-- Content for soft education tab -->
                             <div class="tab-contents" id="education">
                                 <ul>
                                     <li><span>Msc Information technology</span><br><em>University of Aberdeen</em></li>
@@ -78,6 +91,7 @@
                 </div>
              </div>
         </div>
+        <!-- Javascript for tab switching -->
         <script>
             var tablinks=document.getElementsByClassName("tab-links");
             var tabcontents=document.getElementsByClassName("tab-contents");

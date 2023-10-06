@@ -2,18 +2,25 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
+    <!-- Set view port for responsive message -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Chatroom</title>
+    <!-- Link to external CSS file -->
     <link rel="stylesheet" href="/css/chat.css" />
+    <!-- Include the socket.io library for Websocket communication -->
     <script defer src="/socket.io/socket.io.js"></script>
+    <!-- Include the client-side javascript file -->
     <script defer src="/js/client.js"></script>
 
   </head>
   <body>
+    <!-- Side bar section -->
     <div class="sidenav">
+        <!-- List of active users -->
         <div class="inbox__people">
             <h4>Active users</h4>
         </div>
+        <!-- Navigation link to home page -->
         <div class="chat-home">
         <ul>
         <li class="nav-item"><a class="nav-link"  href="index.html">Home</a></li>
@@ -21,6 +28,7 @@
         </div>
     </div>
     <div class="app">
+        <!-- Join screen where users enter their username -->
         <div class="screen join-screen active">
             <div class="form">
                 <h2>Join chat</h2>
@@ -33,14 +41,17 @@
                 </div>
             </div>
         </div>
+        <!-- Chat screen section where the users can chat -->
         <div class="screen chat-screen active">
             <div class="header">
                 <div class="logo">Chatroom</div>
                 <button id="exit-chat"><strong>Quit Chat</strong></button>
             </div>
+            <!-- Container for displaying the messages -->
             <div class="messages">
                 
             </div>
+            <!-- Input box for typing messages -->
             <div class="typebox">
                 <input type="text" id="message-input">
                 <button id="send-message">Send</button>
@@ -50,13 +61,16 @@
       <br>
       <hr>
       <div class="content">
+        <!-- For displaying message history -->
             <div class="messages__history"></div>
+            <!-- Fallback content -->
                 <div class="fallback"></div>
+                <!-- Container for input messages -->
             <div class="inbox__messages">
             
           
             </div>
-
+    <!-- Form for sending messages -->
             <form class="message_form">
                 <input type="text" class="message_form__input" placeholder="Type a message" />
                 <button class="message_form__button" type="submit">
